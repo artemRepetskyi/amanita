@@ -1,0 +1,31 @@
+html{
+	font-size: $main-font-size;
+} 
+html, 
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 1.25;
+} 
+body {
+	font-size: $main-font-size+6;
+	font-family: map-get($font-families, primary);
+	background: color(primary);
+	color: color(default);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: 0;
+	box-sizing: border-box;
+}
+
+#wrapper {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+}

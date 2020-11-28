@@ -1,0 +1,19 @@
+@mixin placeholder {
+	&::-webkit-input-placeholder { @content; }
+	&:-moz-placeholder           { @content; }
+	&::-moz-placeholder          { @content; }
+	&:-ms-input-placeholder      { @content; }
+}
+
+
+// EACH PROPERTY
+@mixin each-property($properties, $property, $className) {
+	@each $key, $value in $properties {
+	    // $index: index($colors, ($key $color));
+	    .#{$className}-#{$key} {
+	        #{$property}: $value; 
+	    }
+	}
+}
+
+

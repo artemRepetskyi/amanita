@@ -1,0 +1,8 @@
+
+// FONT-FAMILY
+$font-families: (
+    zero: 'Playfair Display' sans-serif,
+    primary: 'Raleway' sans-serif,
+);
+
+@include each-property($font-families, font-family, 'font-family'); 

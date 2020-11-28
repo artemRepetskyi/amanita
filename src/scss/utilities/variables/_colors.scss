@@ -1,0 +1,20 @@
+$colors: (
+    /* DEFAULT */
+    default: #ffffff,
+    default-zero: #000000,
+    
+    /* COLOR */
+    zero: #EF4823,
+    primary: #20272E,
+    
+	/* RARE */
+    rare: #303133,
+);
+
+
+@include each-property($colors, color, 'color'); 
+
+@include each-property($colors, background-color, 'bg'); 
+
+
+
