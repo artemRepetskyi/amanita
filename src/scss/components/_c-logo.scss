@@ -1,0 +1,7 @@
+.c-logo{
+	display: block;
+	width: 100%;
+	@include media-breakpoint-down(lg) {
+		max-width: 180px;
+	}
+}
