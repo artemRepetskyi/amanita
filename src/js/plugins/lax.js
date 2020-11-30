@@ -17,7 +17,7 @@
         ]
       }
     });
-    lax.addElements(`.text-0`, {
+    lax.addElements(`.js-title`, {
         scrollY: {
           opacity: [
             [0, 'screenWidth/2'],

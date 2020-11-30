@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.10.4",
+    "@fancyapps/fancybox": "^3.5.7",
     "jquery": "^3.4.1",
     "lax.js": "^2.0.2",
     "swiper": "^6.3.5",

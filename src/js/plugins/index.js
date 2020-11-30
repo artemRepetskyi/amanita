@@ -1,1 +1,2 @@
- import './lax';
+import '@fancyapps/fancybox';
+import './lax';

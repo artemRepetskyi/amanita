@@ -17,7 +17,7 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 });
 var galleryTop = new Swiper('.gallery-top', {
   spaceBetween: 10,
-  loop: true,
+  // loop: false,
   loopedSlides: 5, //looped slides should be the same
   navigation: {
     nextEl: '.swiper-button-next',

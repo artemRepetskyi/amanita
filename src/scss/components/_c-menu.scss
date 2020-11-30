@@ -1,6 +1,7 @@
 .c-menu{
 	z-index: 4;
 	transition: all 0.3s;
+
 	@include media-breakpoint-up(xl) {
 		display: flex;
 		align-items:center;
@@ -8,14 +9,25 @@
 		margin-right: -10px;
 	}
 	@include media-breakpoint-down(lg) {
-		padding-top: 30px;
-		width: 300px;
-		background: color(primary);
-		position: fixed;
-		top: 0;
-		left: 0;
-		height: 100%;
-		transform: translateX(-120%);
+		&--mobile{
+			padding-top: 30px;
+			width: 300px;
+			background: color(primary);
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			transform: translateX(-120%);
+		}
+		&--primary{
+			li{
+				padding: 0;
+			}	
+			a{
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
 	}
 
 	li{
@@ -77,7 +89,7 @@
 
 
 body.active--c-menu{
-	.c-menu{
+	.js-c-menu{
 		transform: translateX(-0%);
 	}
 }

@@ -8,3 +8,24 @@
 .bg-fixed{
 	background-attachment: fixed;
 }
+
+
+.lh{
+	&-0{
+		line-height: 1.4;
+	}
+}
+
+
+.text{
+	&-center{
+		text-align: center;
+	}
+}
+
+
+.w{
+	&-0{
+		width: 25px;
+	}
+}
