@@ -1,0 +1,27 @@
+.c-cart-product{
+	display: flex;
+}
+
+
+.c-cart-product__image{
+	width: 115px;
+	height: 70px;
+	border-radius: 10px;
+	overflow: hidden;
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.c-cart-product__content{
+	display: flex;
+	padding-left: 10px;
+	align-items:center;
+	justify-content: space-between;
+	p{
+		&:first-child{
+			width: 35%;
+		}
+	}
+}

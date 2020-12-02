@@ -1,0 +1,16 @@
+.c-modal{
+	background: color(primary);
+	width: 100%;
+	&--width{
+		max-width: 400px;
+	}
+}
+
+
+.swal2-modal{
+	font-size: 16px;
+}
+
+.swal2-container{
+	z-index: 99999 !important;
+}

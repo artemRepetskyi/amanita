@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="dist/main.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8080/dist/main.css">
+	<!-- <link rel="stylesheet" type="text/css" href="dist/main.css"> -->
 </head>
 <body>
 	<div id="wrapper">
@@ -139,21 +140,49 @@
 			<div class="container">
 				<h2 class="text-0 js-title font-family-zero text-center pt-7 mb-7">Магазин</h2>
 				<div class="row justify-content-between">
-					<div class="col-lg-5 mb-lg-0 mb-7 col-12">
+					<!-- Product -->
+					<div class="js-product col-lg-5 py-5 col-12">
 						<div class="c-image mb-3">
-							<img src="images/views/sections/section-shop/product.jpg" alt="">
+							<img class="js-image" src="images/views/sections/section-shop/product.jpg" alt="">
 						</div>
-						<p class="text-3 font-500 mb-3">Мухомор Красный шляпки 50 гр</p>
+						<p class="text-3 js-title font-500 mb-3">Мухомор Красный шляпки 50 гр</p>
 						<p class="text-3 font-500 mb-4">350 грн</p>
-						<a href="" class="c-btn c-btn--width c-btn--spacing">КУПИТЬ</a>
+						<a href="" 
+						   data-id="0" 
+						   data-price="350" class="js-add-to-cart c-btn c-btn--width c-btn--spacing">КУПИТЬ</a>
 					</div>
-					<div class="col-lg-5 col-12">
+					<!-- Product 1 -->
+					<div class="js-product col-lg-5 py-5 col-12">
 						<div class="c-image mb-3">
-							<img src="images/views/sections/section-shop/product-1.jpg" alt="">
+							<img class="js-image" src="images/views/sections/section-shop/product-1.jpg" alt="">
 						</div>
-						<p class="text-3 font-500 mb-3">Мухомор Красный шляпки 100 гр</p>
+						<p class="text-3 js-title font-500 mb-3">Мухомор Красный шляпки 100 гр</p>
 						<p class="text-3 font-500 mb-4">650 грн</p>
-						<a href="" class="c-btn c-btn--width c-btn--spacing">КУПИТЬ</a>
+						<a href="" 
+						   data-id="1" 
+						   data-price="650" class="js-add-to-cart c-btn c-btn--width c-btn--spacing">КУПИТЬ</a>
+					</div>
+					<!-- Product 2 -->
+					<div class="js-product col-lg-5 py-5 col-12">
+						<div class="c-image mb-3">
+							<img class="js-image" src="images/views/sections/section-shop/product-1.jpg" alt="">
+						</div>
+						<p class="text-3 js-title font-500 mb-3">Мухомор Красный шляпки 500 гр</p>
+						<p class="text-3 font-500 mb-4">3100 грн</p>
+						<a href="" 
+						   data-id="2" 
+						   data-price="3100" class="js-add-to-cart c-btn c-btn--width c-btn--spacing">КУПИТЬ</a>
+					</div>
+					<!-- Product 2 -->
+					<div class="js-product col-lg-5 py-5 col-12">
+						<div class="c-image mb-3">
+							<img class="js-image" src="images/views/sections/section-shop/product-1.jpg" alt="">
+						</div>
+						<p class="text-3 js-title font-500 mb-3">Мухомор Пантерный шляпки 50 гр</p>
+						<p class="text-3 font-500 mb-4">400 грн</p>
+						<a href="" 
+						   data-id="3" 
+						   data-price="400" class="js-add-to-cart c-btn c-btn--width c-btn--spacing">КУПИТЬ</a>
 					</div>
 				</div>
 			</div>
@@ -185,6 +214,24 @@
 				</div>
 			</div>
 		</section>
+
+		<section class="pt-7">
+			<div class="container">
+				<h2 class="text-0 font-family-zero mt-5 mb-7 text-center">Как осуществить заказ</h2>
+				<p class="text-3 font-300 mb-4">
+					Покупая у нас, Вы получаете профессиональный продукт в качественной завакуумированой, практичной 
+					упаковке, с проверенным радиационным фоном.
+					Доставка осуществляется по всему миру. Новой почтой или Укр Почтой а также если вам удобно другим
+					способом, можем обговорить и отправить любым для Вас удобным способом.
+					Также если Вы из г. Одесса, можно забрать самовывозом.
+					Оплата на територии Украины: либо оплатой на карту либо наложенным платежом без предоплаты
+					Оплата в другие страны: По полной предоплате + оплата за доставку
+				</p>
+				<p class="font-500 text-3">Также, если Вы хотите проверить наш продукт, мы можем бесплатно отправить Вам одну шляпку красного мухомора ( доставка за ваш счет).</p>
+			</div>
+		</section>
+
+		<!-- Contacts -->
 		<section class="py-7">
 			<div class="container">
 				<h2 class="text-0 font-family-zero mt-5 mb-7 text-center">Контакты</h2>
@@ -286,7 +333,26 @@
 			</div>
 		</footer>
 	</div>
+
+	<div id="c-modal_checkout" class="c-modal c-modal--width p-5">
+		<h2 class="text-0 font-family-zero mt-5 mb-7 text-center">Ваш заказ:</h2>
+		<div class="c-line my-4"></div>
+		<form action="" class="js-form">
+			<ul class="js-products">
+				
+			</ul>
+			<div class="c-line my-4"></div>
+			<label class="d-block mb-4 text-3">Имя</label>
+			<input name="name" type="text" class="c-input mb-3">
+			<label class="d-block mb-4 text-3">Телефон</label>
+			<input name="phone" type="text" class="c-input mb-3">
+			<label class="d-block mb-4 text-5">Если вы желаете чтобы мы вам уже отправили без предварительного звонка, напишите ниже ФИО получателя, город, склад новой почты и телефон</label>
+			<textarea name="all" class="c-input c-input--textarea mb-3"></textarea>
+			<button class="c-btn c-btn--height c-btn--not-hover">ОФОРМИТЬ</button>
+		</form>
+	</div>
 	<!-- <script type="text/javascript" src="dist/vendors~indexSecondary~main.js"></script> -->
-	<script type="text/javascript" src="dist/main.js"></script>
+	<script type="text/javascript" src="http://localhost:8080/dist/main.js"></script>
+	<!-- <script type="text/javascript" src="dist/main.js"></script> -->
 </body>
 </html>

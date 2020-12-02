@@ -1,0 +1,63 @@
+.c-counter{
+    width: 70px;
+    display: flex;
+    align-items: center;
+    &.active{
+        .c-counter__btn{
+            &.minus{
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+    } 
+}
+
+
+.c-counter__btn{
+    outline: none;
+    border:none;
+    color: color(primary);
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    transition:all 0.3s;
+    background: color(default);
+    &:hover{
+        box-shadow: 0 0 5px rgba(color(default),0.2);
+        transform: scale(1.1);
+    }
+    &:active{
+        transform: scale(1);
+    }
+
+    &:before,
+    &:after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: currentColor;
+    }
+    &:before{
+        width: 7px;
+        height: 1px;
+    }
+    &:after{
+        width: 1px;
+        height: 7px;
+    }
+    &.minus{
+        // pointer-events: none;
+        // opacity: 0;
+        &:after{display:none;}
+    }
+    &.plus{}
+}
+.c-counter__input{
+    width: calc(100% - 40px);
+    text-align: center;
+    color: color(default);
+}

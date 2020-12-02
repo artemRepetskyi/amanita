@@ -1,0 +1,16 @@
+
+
+.c-input{
+	border: 1px solid color(default);
+	outline: none;
+	height: 50px;
+	width: 100%;
+	font-size: rem(18);
+	text-indent: 15px;
+	font-family: map-get($font-families, primary);
+	color: color(default);
+	&--textarea{
+		padding-top: 15px;
+		height: 135px;
+	}
+}
