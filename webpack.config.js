@@ -37,7 +37,7 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: filename('css'),
 		}),
-		new CleanWebpackPlugin(),
+		// new CleanWebpackPlugin(),
 		new webpack.ProvidePlugin({
 		  $: 'jquery',
 		  jQuery: 'jquery'

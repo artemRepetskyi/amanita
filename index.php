@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="http://localhost:8080/dist/main.css">
-	<!-- <link rel="stylesheet" type="text/css" href="dist/main.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="http://localhost:8080/dist/main.css"> -->
+	<link rel="stylesheet" type="text/css" href="dist/main.css">
 </head>
 <body>
 	<div id="wrapper">
@@ -104,32 +104,18 @@
 				<div class="c-slider">
 					<div class="swiper-container gallery-top">
 					    <div class="swiper-wrapper">
-					      <div class="swiper-slide"><a data-fancybox="gallery" href="images/views/sections/section-2/slide-1.png" data-options='{"backFocus":false}'><img src="images/views/sections/section-2/slide-1.png" alt=""></a></div>
-					      <div class="swiper-slide"><a data-fancybox="gallery" href="images/views/sections/section-2/slide-1.png" data-options='{"backFocus":false}'><img src="images/views/sections/section-2/slide-1.png" alt=""></a></div>
-					      <div class="swiper-slide"><a data-fancybox="gallery" href="images/views/sections/section-2/slide-1.png" data-options='{"backFocus":false}'><img src="images/views/sections/section-2/slide-1.png" alt=""></a></div>
-					      <div class="swiper-slide"><a data-fancybox="gallery" href="images/views/sections/section-2/slide-1.png" data-options='{"backFocus":false}'><img src="images/views/sections/section-2/slide-1.png" alt=""></a></div>
-					      <div class="swiper-slide"><a data-fancybox="gallery" href="images/views/sections/section-2/slide-1.png" data-options='{"backFocus":false}'><img src="images/views/sections/section-2/slide-1.png" alt=""></a></div>
-					      <div class="swiper-slide"><a data-fancybox="gallery" href="images/views/sections/section-2/slide-1.png" data-options='{"backFocus":false}'><img src="images/views/sections/section-2/slide-1.png" alt=""></a></div>
-					      <div class="swiper-slide"><a data-fancybox="gallery" href="images/views/sections/section-2/slide-1.png" data-options='{"backFocus":false}'><img src="images/views/sections/section-2/slide-1.png" alt=""></a></div>
-					      <div class="swiper-slide"><a data-fancybox="gallery" href="images/views/sections/section-2/slide-1.png" data-options='{"backFocus":false}'><img src="images/views/sections/section-2/slide-1.png" alt=""></a></div>
-					      <div class="swiper-slide"><a data-fancybox="gallery" href="images/views/sections/section-2/slide-1.png" data-options='{"backFocus":false}'><img src="images/views/sections/section-2/slide-1.png" alt=""></a></div>
-					      <div class="swiper-slide"><a data-fancybox="gallery" href="images/views/sections/section-2/slide-1.png" data-options='{"backFocus":false}'><img src="images/views/sections/section-2/slide-1.png" alt=""></a></div>
+					      <?php for ($i=1; $i <= 19; $i++) {?> 
+					      	<div class="swiper-slide"><a data-fancybox="gallery" href="images/views/sections/section-2/slide-<?= $i ?>.jpg" data-options='{"backFocus":false}'><img src="images/views/sections/section-2/slide-<?= $i ?>.jpg" alt=""></a></div>
+					      <?php } ?>
 					    </div>
 					    <!-- Add Pagination -->
 					    <div class="swiper-pagination"></div>
 					  </div>
 					  <div class="swiper-container gallery-thumbs">
 					    <div class="swiper-wrapper">
-					      <div class="swiper-slide"><img src="images/views/sections/section-2/slide-1.png" alt=""></div>
-					      <div class="swiper-slide"><img src="images/views/sections/section-2/slide-1.png" alt=""></div>
-					      <div class="swiper-slide"><img src="images/views/sections/section-2/slide-1.png" alt=""></div>
-					      <div class="swiper-slide"><img src="images/views/sections/section-2/slide-1.png" alt=""></div>
-					      <div class="swiper-slide"><img src="images/views/sections/section-2/slide-1.png" alt=""></div>
-					      <div class="swiper-slide"><img src="images/views/sections/section-2/slide-1.png" alt=""></div>
-					      <div class="swiper-slide"><img src="images/views/sections/section-2/slide-1.png" alt=""></div>
-					      <div class="swiper-slide"><img src="images/views/sections/section-2/slide-1.png" alt=""></div>
-					      <div class="swiper-slide"><img src="images/views/sections/section-2/slide-1.png" alt=""></div>
-					      <div class="swiper-slide"><img src="images/views/sections/section-2/slide-1.png" alt=""></div>
+					      <?php for ($i=1; $i <= 19; $i++) {?> 
+						      <div class="swiper-slide"><img src="images/views/sections/section-2/slide-<?= $i ?>.jpg" alt=""></div>
+					       <?php } ?>
 					    </div>
 					  </div>
 				</div>
@@ -352,7 +338,7 @@
 		</form>
 	</div>
 	<!-- <script type="text/javascript" src="dist/vendors~indexSecondary~main.js"></script> -->
-	<script type="text/javascript" src="http://localhost:8080/dist/main.js"></script>
-	<!-- <script type="text/javascript" src="dist/main.js"></script> -->
+	<!-- <script type="text/javascript" src="http://localhost:8080/dist/main.js"></script> -->
+	<script type="text/javascript" src="dist/main.js"></script>
 </body>
 </html>
