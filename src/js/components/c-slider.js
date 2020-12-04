@@ -13,9 +13,11 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
     direction: 'vertical',
+    lazy: true,
 
 });
 var galleryTop = new Swiper('.gallery-top', {
+  lazy: true,
   spaceBetween: 10,
   // loop: false,
   loopedSlides: 5, //looped slides should be the same

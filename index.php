@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<!-- <link rel="stylesheet" type="text/css" href="http://localhost:8080/dist/main.css"> -->
-	<link rel="stylesheet" type="text/css" href="dist/main.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8080/dist/main.css">
+	<!-- <link rel="stylesheet" type="text/css" href="dist/main.css"> -->
 </head>
 <body>
 	<div id="wrapper">
@@ -21,19 +21,19 @@
 					<div class="col-auto d-flex align-items-center">
 						<ul class="c-menu c-menu--mobile js-c-menu pr-7">
 							<li>
-								<a href="">Главная</a>
+								<a href="#header">Главная</a>
 							</li>
 							<li>
-								<a href="">О нас</a>
+								<a href="#about-us">О нас</a>
 							</li>
 							<li>
-								<a href="">Магазин</a>
+								<a href="#shop">Магазин</a>
 							</li>
 							<li>
-								<a href="">Материалы</a>
+								<a href="#more-information">Материалы</a>
 							</li>
 							<li>
-								<a href="">Контакты</a>
+								<a href="" class="js-contacts">Контакты</a>
 							</li>
 							<li class="d-xl-none">
 								<a href="mailto:kostyakeys@gmail.com">kostyakeys@gmail.com</a>
@@ -63,11 +63,11 @@
 			</div>
 		</nav>
 		<!-- Header -->
-		<header class="s-header bg-cover bg-fixed" style="background-image: url(images/views/sections/s-header/bg.jpg); ;">
+		<header id="header" class="s-header bg-cover bg-fixed" style="background-image: url(images/views/sections/s-header/bg.jpg); ;">
 			<div class="container d-flex justify-content-center flex-column align-items-lg-center">
 				<div><img src="images/logos/logo-1.svg" alt=""></div>
 				<h1 class="text-0 font-family-zero my-6 color-default">ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН</h1>
-				<a href="" class="c-btn c-btn--width c-btn--spacing">КУПИТЬ</a>
+				<a href="#shop" class="c-btn c-btn--width c-btn--spacing">КУПИТЬ</a>
 			</div>
 			<div class="s-header__contact d-lg-flex justify-content-between d-none">
 				<a href="mailto:kostyakeys@gmail.com" class="d-flex align-items-center color-default font-7">
@@ -83,7 +83,7 @@
 			<div class="s-header__scroll"></div>
 		</header>
 		<!-- Section 1 -->
-		<section class="pt-7">
+		<section id="about-us" class="pt-7">
 			<div class="container d-flex flex-column align-items-center">
 				<img class="img-scale" src="images/views/sections/section-1/image.svg" alt="">
 				<h2 class="text-0 font-family-zero mt-5 mb-7">О нас</h2>
@@ -98,14 +98,14 @@
 			</div>
 		</section>
 		<!-- Section-2 -->
-		<section>
+		<section id="gallery">
 			<div class="container">
 				<h2 class="text-0 js-title font-family-zero color-zero mb-7">Фото галерея</h2>
 				<div class="c-slider">
 					<div class="swiper-container gallery-top">
 					    <div class="swiper-wrapper">
 					      <?php for ($i=1; $i <= 19; $i++) {?> 
-					      	<div class="swiper-slide"><a data-fancybox="gallery" href="images/views/sections/section-2/slide-<?= $i ?>.jpg" data-options='{"backFocus":false}'><img src="images/views/sections/section-2/slide-<?= $i ?>.jpg" alt=""></a></div>
+					      	<div class="swiper-slide"><a data-fancybox="gallery" href="images/views/sections/section-2/slide-<?= $i ?>.jpg" data-options='{"backFocus":false}'><img class="swiper-lazy" data-src="images/views/sections/section-2/slide-<?= $i ?>.jpg" alt=""><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div></a></div>
 					      <?php } ?>
 					    </div>
 					    <!-- Add Pagination -->
@@ -114,7 +114,7 @@
 					  <div class="swiper-container gallery-thumbs">
 					    <div class="swiper-wrapper">
 					      <?php for ($i=1; $i <= 19; $i++) {?> 
-						      <div class="swiper-slide"><img src="images/views/sections/section-2/slide-<?= $i ?>.jpg" alt=""></div>
+						      <div class="swiper-slide"><img class="swiper-lazy" data-src="images/views/sections/section-2/slide-<?= $i ?>.jpg" alt=""><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div></div>
 					       <?php } ?>
 					    </div>
 					  </div>
@@ -122,7 +122,7 @@
 			</div>
 		</section>
 
-		<section class="py-7">
+		<section id="shop" class="py-7">
 			<div class="container">
 				<h2 class="text-0 js-title font-family-zero text-center pt-7 mb-7">Магазин</h2>
 				<div class="row justify-content-between">
@@ -175,7 +175,7 @@
 		</section>
 
 		<!-- More Information -->
-		<section class="pt-7">
+		<section id="more-information" class="pt-7">
 			<div class="container">
 				<h2 class="text-0 font-family-zero mt-5 mb-7 text-center">Еще немного информации</h2>
 				<div class="row">
@@ -201,7 +201,7 @@
 			</div>
 		</section>
 
-		<section class="pt-7">
+		<section id="" class="pt-7 pb-7">
 			<div class="container">
 				<h2 class="text-0 font-family-zero mt-5 mb-7 text-center">Как осуществить заказ</h2>
 				<p class="text-3 font-300 mb-4">
@@ -218,11 +218,11 @@
 		</section>
 
 		<!-- Contacts -->
-		<section class="py-7">
+		<div id="contacts" class="c-modal c-modal--primary c-modal--width-1" style="display: none;">
 			<div class="container">
 				<h2 class="text-0 font-family-zero mt-5 mb-7 text-center">Контакты</h2>
 				<div class="row justify-content-between">
-					<div class="col-md-auto col-12  mb-md-0 mb-7">
+					<div class="col-md-auto col-12  mb-7">
 						<ul class="text-0">
 							<li>
 								<p><span class="color-zero">Адрес:</span> Украина, г.Одесса</p>
@@ -257,7 +257,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 		<!-- Footer -->
 
 		<footer class="s-footer py-7">
@@ -285,19 +285,19 @@
 					<div class="col-md-auto col-12">
 						<ul class="c-menu c-menu--primary">
 							<li>
-								<a href="">Главная</a>
+								<a href="#header">Главная</a>
 							</li>
 							<li>
-								<a href="">О нас</a>
+								<a href="#about-us">О нас</a>
 							</li>
 							<li>
-								<a href="">Магазин</a>
+								<a href="#shop">Магазин</a>
 							</li>
 							<li>
-								<a href="">Материалы</a>
+								<a href="#more-information">Материалы</a>
 							</li>
 							<li>
-								<a href="">Контакты</a>
+								<a href="" class="js-contacts">Контакты</a>
 							</li>
 						</ul>
 						<ul class="pt-4 pl-3">
@@ -320,7 +320,7 @@
 		</footer>
 	</div>
 
-	<div id="c-modal_checkout" class="c-modal c-modal--width p-5">
+	<div id="c-modal_checkout" class="c-modal c-modal--width p-5" style="display: none;">
 		<h2 class="text-0 font-family-zero mt-5 mb-7 text-center">Ваш заказ:</h2>
 		<div class="c-line my-4"></div>
 		<form action="" class="js-form">
@@ -337,8 +337,7 @@
 			<button class="c-btn c-btn--height c-btn--not-hover">ОФОРМИТЬ</button>
 		</form>
 	</div>
-	<!-- <script type="text/javascript" src="dist/vendors~indexSecondary~main.js"></script> -->
-	<!-- <script type="text/javascript" src="http://localhost:8080/dist/main.js"></script> -->
-	<script type="text/javascript" src="dist/main.js"></script>
+	<script type="text/javascript" src="http://localhost:8080/dist/main.js"></script>
+	<!-- <script type="text/javascript" src="dist/main.js"></script> -->
 </body>
 </html>
