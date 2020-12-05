@@ -16,7 +16,7 @@ export default class CCounter {
 
         $(window).on('load', this.load.bind(this));
 
-        this.body.on('click', `${this.counter} div`, function (event) {
+        this.body.on('click', `${this.counter} .c-counter__btn`, function (event) {
             $(this).hasClass('plus') ? self.quantityPlus($(this)) : self.quantityMinus($(this));
         });
 
@@ -40,7 +40,7 @@ export default class CCounter {
     load() {
         let self = this;
         $(this.counter).each(function (index, el) {
-            self.quantityActive($(el).find('div'), $(el).find('input'));
+            self.quantityActive($(el).find('.c-counter__btn'), $(el).find('input'));
         });
     }
 
@@ -75,7 +75,7 @@ export default class CCounter {
         let checkout = new Checkout();
         let cart = checkout.getCart();
             
-        ++cart.items;
+        // ++cart.items;
         cart.productItems[id] = checkout.updateProduct(id, newQty);
 
         // Set
@@ -83,21 +83,7 @@ export default class CCounter {
         // Update
         checkout.updateCart();
         checkout.renderItems();
-        // $.ajax({
-        //     url: '/card/edit-qty',
-        //     data: {
-        //         id: currentProdId,
-        //         qty: newQty
-        //     },
-        //     type: 'GET',
-        //     success: function (res) {
-        //         AddToCart.refreshDataInCart();
-        //         AddToCart.refreshHeaderInfo();
-        //     },
-        //     error: function (err) {
-        //         console.log(err);
-        //     }
-        // });
+        
     }
 }
 

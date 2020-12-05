@@ -4,9 +4,9 @@ import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 
 var galleryThumbs = new Swiper('.gallery-thumbs', {
-  spaceBetween: 5,
-  slidesPerView: 'auto',
-  // loop: true,
+  spaceBetween: 3,
+  slidesPerView: 5,
+  loop: false,
     autoHeight: true,
   freeMode: true,
   loopedSlides: 5, //looped slides should be the same
@@ -14,12 +14,23 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
   watchSlidesProgress: true,
     direction: 'vertical',
     lazy: true,
+    breakpoints: {
+        640: {
+          slidesPerView: 5,
+        },
+        768: {
+          slidesPerView: 7,
+        },
+        1024: {
+          slidesPerView: 10,
+        },
+      }
 
 });
 var galleryTop = new Swiper('.gallery-top', {
   lazy: true,
   spaceBetween: 10,
-  // loop: false,
+  loop: false,
   loopedSlides: 5, //looped slides should be the same
   navigation: {
     nextEl: '.swiper-button-next',

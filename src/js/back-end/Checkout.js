@@ -35,8 +35,6 @@ console.log(products);
 
 export default class Checkout {
  	constructor(){
- 		this.events();
- 		// this.cart = ();
  		if (Cookies.get('cart') === undefined) {
  			this.setCart({
 	 			items: 0,
@@ -99,7 +97,7 @@ export default class Checkout {
 				type: 'POST',
 				data: form.serialize(),
 			})    
-			.done(function(data, add) {
+			.done(function(data) {
 				if (data === 'ok') {
 					Swal.fire({
 					  icon: 'success',
@@ -127,7 +125,7 @@ export default class Checkout {
 
 		// console.log(JSON.parse(Cookies.get('foo')));
 
-		$('body').on('click', '.js-add-to-cart', function (e) {
+		$('.js-add-to-cart').on('click', function (e) {
 			e.preventDefault();
 			let cart = self.getCart();
 			let id = $(this).data('id');
@@ -157,6 +155,7 @@ export default class Checkout {
  		this.changeItemsCart();
  	}
  	updateProduct(id, count = 1){
+
  		let cart = this.getCart();
  		console.log(cart.productItems[id]);
  		return {
@@ -196,11 +195,11 @@ export default class Checkout {
 			html += template;
 		  }
 		}
-
  		cart.items = total;
  		this.setCart(cart);
  		this.changeItemsCart();
 		$('.js-products').html(html);
+
 		// $('.js-c-counter input').change();
  	}
 
@@ -212,4 +211,4 @@ export default class Checkout {
  	}
 }
 
-new Checkout();
+new Checkout().events();

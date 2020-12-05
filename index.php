@@ -104,7 +104,7 @@
 				<div class="c-slider">
 					<div class="swiper-container gallery-top">
 					    <div class="swiper-wrapper">
-					      <?php for ($i=1; $i <= 19; $i++) {?> 
+					      <?php for ($i=1; $i <= 20; $i++) {?> 
 					      	<div class="swiper-slide"><a data-fancybox="gallery" href="images/views/sections/section-2/slide-<?= $i ?>.jpg" data-options='{"backFocus":false}'><img class="swiper-lazy" data-src="images/views/sections/section-2/slide-<?= $i ?>.jpg" alt=""><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div></a></div>
 					      <?php } ?>
 					    </div>
@@ -113,7 +113,7 @@
 					  </div>
 					  <div class="swiper-container gallery-thumbs">
 					    <div class="swiper-wrapper">
-					      <?php for ($i=1; $i <= 19; $i++) {?> 
+					      <?php for ($i=1; $i <= 20; $i++) {?> 
 						      <div class="swiper-slide"><img class="swiper-lazy" data-src="images/views/sections/section-2/slide-<?= $i ?>.jpg" alt=""><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div></div>
 					       <?php } ?>
 					    </div>
