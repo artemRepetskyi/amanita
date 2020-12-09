@@ -1,9 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Купить красный мухомор в Украине</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="Купить красных сушеных мухоморов Amanita muscaria по всей Украине. Киев, Одесса, Днепр, Харьков. ">
+	<meta property="og:url" content="https://muhomorfamily.com">
+	<meta property="og:title" content="Купить красный мухомор в Украине">
+	<meta property="og:description" content="Купить красных сушеных мухоморов Amanita muscaria по всей Украине. Киев, Одесса, Днепр, Харьков. ">
+	<meta property="og:type" content="website">
+	<!-- <meta property="og:image" content="https://static.tildacdn.com/tild3835-3964-4136-a631-386435663437/-/resize/504x/myhomory-prodaga-v-u.jpg"> -->
 	<!-- <link rel="stylesheet" type="text/css" href="http://localhost:8080/dist/main.css"> -->
 	<link rel="stylesheet" type="text/css" href="dist/main.css">
 </head>
@@ -244,9 +251,9 @@
 					<div class="col-md-auto col-1lg-2 col-12">
 						<ul>
 							<li class="mb-5">
-								<a target="_blank" class="d-flex align-items-center color-default text-0" href="https://instagram.com/amanita">
+								<a target="_blank" class="d-flex align-items-center color-default text-0" href="https://instagram.com/muhomorfamily?igshid=gixdyd6xttmw">
 									<img src="images/views/sections/section-3/icon-instagram.png" alt="">
-									<span class="pl-5">instagram.com/amanita</span>
+									<span class="pl-5">instagram.com/muhomorfamily</span>
 								</a>
 							</li>
 							<li>
@@ -304,9 +311,10 @@
 						</ul>
 						<ul class="pt-4 pl-3">
 							<li class="mb-4">
-								<a target="_blank" class="d-flex align-items-center color-default text-5" href="https://instagram.com/amanita">
+								<a target="_blank" class="d-flex align-items-center color-default text-5" 
+								href="https://instagram.com/muhomorfamily?igshid=gixdyd6xttmw">
 									<img class="w-0" src="images/views/sections/section-3/icon-instagram.png" alt="">
-									<span class="pl-5">instagram.com/amanita</span>
+									<span class="pl-5">instagram.com/muhomorfamily</span>
 								</a>
 							</li>
 							<li>
