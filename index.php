@@ -9,6 +9,8 @@
 	<meta property="og:url" content="https://muhomorfamily.com">
 	<meta property="og:title" content="Купить красный мухомор в Украине">
 	<meta property="og:description" content="Купить красных сушеных мухоморов Amanita muscaria по всей Украине. Киев, Одесса, Днепр, Харьков. ">
+	<!-- imgonline-com-ua-fav -->
+	<link rel="shortcut icon" href="imgonline-com-ua-fav.ico" type="image/x-icon">
 	<meta property="og:type" content="website">
 	<!-- <meta property="og:image" content="https://static.tildacdn.com/tild3835-3964-4136-a631-386435663437/-/resize/504x/myhomory-prodaga-v-u.jpg"> -->
 	<!-- <link rel="stylesheet" type="text/css" href="http://localhost:8080/dist/main.css"> -->
@@ -87,7 +89,7 @@
 				</a>
 			</div>
 			<!-- s-header__scroll -->
-			<div class="s-header__scroll"></div>
+			<a href="#about-us" class="s-header__scroll"></a>
 		</header>
 		<!-- Section 1 -->
 		<section id="about-us" class="pt-7">
@@ -257,9 +259,9 @@
 								</a>
 							</li>
 							<li>
-								<a target="_blank" class="d-flex align-items-center color-default text-0" href="https://teleg.run/amanitaMuscariaPNG">
+								<a target="_blank" class="d-flex align-items-center color-default text-0" href="https://teleg.run/phapha_agaric">
 									<img src="images/views/sections/section-3/icon-telegram.png" alt="">
-									<span class="pl-5">@amanitaMuscariaPNG</span>
+									<span class="pl-5">@phapha_agaric</span>
 								</a>
 							</li>
 						</ul>
@@ -318,9 +320,9 @@
 								</a>
 							</li>
 							<li>
-								<a target="_blank" class="d-flex align-items-center color-default text-5" href="https://teleg.run/amanitaMuscariaPNG">
+								<a target="_blank" class="d-flex align-items-center color-default text-5" href="https://teleg.run/phapha_agaric">
 									<img class="w-0" src="images/views/sections/section-3/icon-telegram.png" alt="">
-									<span class="pl-5">@amanitaMuscariaPNG</span>
+									<span class="pl-5">@phapha_agaric</span>
 								</a>
 							</li>
 						</ul>
