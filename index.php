@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="http://localhost:8080/dist/main.css">
-	<!-- <link rel="stylesheet" type="text/css" href="dist/main.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="http://localhost:8080/dist/main.css"> -->
+	<link rel="stylesheet" type="text/css" href="dist/main.css">
 </head>
 <body>
 	<div id="wrapper">
@@ -339,7 +339,7 @@
 			<button class="c-btn c-btn--height c-btn--not-hover">ОФОРМИТЬ</button>
 		</form>
 	</div>
-	<script type="text/javascript" src="http://localhost:8080/dist/main.js"></script>
-	<!-- <script type="text/javascript" src="dist/main.js"></script> -->
+	<!-- <script type="text/javascript" src="http://localhost:8080/dist/main.js"></script> -->
+	<script type="text/javascript" src="dist/main.js"></script>
 </body>
 </html>
