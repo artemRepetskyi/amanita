@@ -4,7 +4,7 @@ import Fancybox from '../utilities/Fancybox';
 
 
 
-$(window).on('scroll', function (e) {
+$(window).on('scroll load', function (e) {
 	$('.c-nav').toggleClass('active', $(this).scrollTop() >= 1);
 })
 
