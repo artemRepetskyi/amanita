@@ -15,6 +15,16 @@
 	<!-- <meta property="og:image" content="https://static.tildacdn.com/tild3835-3964-4136-a631-386435663437/-/resize/504x/myhomory-prodaga-v-u.jpg"> -->
 	<!-- <link rel="stylesheet" type="text/css" href="http://localhost:8080/dist/main.css"> -->
 	<link rel="stylesheet" type="text/css" href="dist/main.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-185265808-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-185265808-1');
+</script>
 </head>
 <body>
 	<div id="wrapper">
@@ -45,7 +55,7 @@
 								<a href="" class="js-contacts">Контакты</a>
 							</li>
 							<li class="d-xl-none">
-								<a href="mailto:kostyakeys@gmail.com">kostyakeys@gmail.com</a>
+								<a href="mailto:muhomorfamily@gmail.com">muhomorfamily@gmail.com</a>
 							</li>
 							<li class="d-xl-none">
 								<a href="tel:+380930333821">+380 93 033 38 21</a>
@@ -79,9 +89,9 @@
 				<a href="#shop" class="c-btn c-btn--width c-btn--spacing">КУПИТЬ</a>
 			</div>
 			<div class="s-header__contact d-lg-flex justify-content-between d-none">
-				<a href="mailto:kostyakeys@gmail.com" class="d-flex align-items-center color-default font-7">
+				<a href="mailto:muhomorfamily@gmail.com" class="d-flex align-items-center color-default font-7">
 					<img src="images/views/sections/s-header/icon.png" alt="">
-					<span class="pl-3">kostyakeys@gmail.com</span>
+					<span class="pl-3">muhomorfamily@gmail.com</span>
 				</a>
 				<a href="tel:+380930333821" class="d-flex align-items-center color-default font-7">
 					<img src="images/views/sections/s-header/icon-1.png" alt="">
@@ -113,7 +123,7 @@
 					    <div class="swiper-wrapper">
 					      <?php for ($i=1; $i <= 20; $i++) {?> 
 					      	<?php $type = in_array($i, [11]) ? 'jpeg' : 'jpg'; ?>
-					      	<div class="swiper-slide"><a data-fancybox="gallery" href="images/views/sections/section-2/slide-<?= $i ?>.<?= $type ?>" data-options='{"backFocus":false}'><img class="swiper-lazy" data-src="images/views/sections/section-2/slide-<?= $i ?>.<?= $type ?>" alt=""><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div></a></div>
+					      	<div class="swiper-slide"><a data-fancybox="gallery" href="images/views/sections/section-2/gallery-<?= $i ?>.<?= $type ?>" data-options='{"backFocus":false}'><img class="swiper-lazy" data-src="images/views/sections/section-2/gallery-<?= $i ?>.<?= $type ?>" alt=""><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div></a></div>
 					      <?php } ?>
 					    </div>
 					    <!-- Add Pagination -->
@@ -123,7 +133,7 @@
 					    <div class="swiper-wrapper">
 					      <?php for ($i=1; $i <= 20; $i++) {?>
 					      	<?php $type = in_array($i, [11]) ? 'jpeg' : 'jpg'; ?>
-						      <div class="swiper-slide"><img class="swiper-lazy" data-src="images/views/sections/section-2/slide-<?= $i ?>.<?= $type ?>" alt=""><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div></div>
+						      <div class="swiper-slide"><img class="swiper-lazy" data-src="images/views/sections/section-2/gallery-<?= $i ?>.<?= $type ?>" alt=""><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div></div>
 					       <?php } ?>
 					    </div>
 					  </div>
@@ -171,7 +181,7 @@
 					<!-- Product 2 -->
 					<div class="js-product col-lg-5 py-5 col-12">
 						<div class="c-image mb-3">
-							<img class="js-image" src="images/views/sections/section-shop/product-1.jpg" alt="">
+							<img class="js-image" src="images/views/sections/section-shop/muxomor-2.jpeg" alt="">
 						</div>
 						<p class="text-3 js-title font-500 mb-3">Мухомор Пантерный шляпки 50 гр</p>
 						<p class="text-3 font-500 mb-4">400 грн</p>
@@ -241,7 +251,7 @@
 								<p><span class="color-zero">Телефон:</span> <a class="color-default" href="tel:+380930333821">+380 93 033 38 21</a></p>
 							</li>
 							<li>
-								<p><span class="color-zero">Email:</span> <a href="mailto:kostyakeys@gmail.com" class="color-default">kostyakeys@gmail.com</a></p>
+								<p><span class="color-zero">Email:</span> <a href="mailto:muhomorfamily@gmail.com" class="color-default">muhomorfamily@gmail.com</a></p>
 							</li>
 							<li>
 								<p><span class="color-zero">Рабочее время:</span> с 08:00 до 23:00</p>
@@ -284,7 +294,7 @@
 								<p><span class="color-zero">Телефон:</span> <a class="color-default" href="tel:+380930333821">+380 93 033 38 21</a></p>
 							</li>
 							<li>
-								<p><span class="color-zero">Email:</span> <a href="mailto:kostyakeys@gmail.com" class="color-default">kostyakeys@gmail.com</a></p>
+								<p><span class="color-zero">Email:</span> <a href="mailto:muhomorfamily@gmail.com" class="color-default">muhomorfamily@gmail.com</a></p>
 							</li>
 							<li>
 								<p><span class="color-zero">Рабочее время:</span> с 08:00 до 23:00</p>
