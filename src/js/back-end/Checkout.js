@@ -17,6 +17,21 @@ document.querySelectorAll('.js-product').forEach((item, key) => {
 });
 console.log(products);
 
+
+function toastError(text) {
+	const Toast = Swal.mixin({
+	  toast: true,
+	  position: 'top-end',
+	  showConfirmButton: false,
+	  timer: 3000,
+	  timerProgressBar: true
+	})
+
+	Toast.fire({
+	  icon: 'error',
+	  title: text,
+	})
+}
 // let products = {
 // 	0: {
 // 		price: 350,
@@ -69,6 +84,9 @@ export default class Checkout {
  			}
  			
  		});
+ 		$('.c-input').on('focus', function (e) {
+ 			$(this).removeClass('error');
+ 		});
 
  	// 	$(".validate").validate({
 		//   rules: {
@@ -91,7 +109,20 @@ export default class Checkout {
  		$('.js-form').on('submit', function (e) {
  			e.preventDefault();
  			let form = $(this);
+ 			
+ 			if (form[0].elements.name.value === '') {
+ 				form[0].elements.name.classList.add('error');
+ 				toastError('Введите свое имя');
+ 				return;
+ 			}
+ 			if (form[0].elements.phone.value === '') {
+ 				form[0].elements.phone.classList.add('error');
+ 				toastError('Введите номер телефона');
+ 				return;
+ 			}
  			form.find('button').addClass('disabled');
+ 			form[0].elements.name.classList.remove('error');
+ 			form[0].elements.phone.classList.remove('error');
  			$.ajax({
 				url: './telegram.php',
 				type: 'POST',
