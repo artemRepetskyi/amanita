@@ -1,11 +1,11 @@
 <?php
 
-/* https://api.telegram.org/bot1460634688:AAHJzzv2chQp0_L98pZJj8CNxanh1F2RYOQ/getUpdates,
+/* https://api.telegram.org/bot1478529028:AAFC9B8xzDEmG0Fv8Ckeu41okBFGDyhMlgE/getUpdates,
 где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
 
 
-$token = "1460634688:AAHJzzv2chQp0_L98pZJj8CNxanh1F2RYOQ";
-$chat_id = "-406347258";
+$token = "1478529028:AAFC9B8xzDEmG0Fv8Ckeu41okBFGDyhMlgE";
+$chat_id = "-1001452271583";
 
 $txt = '';
 foreach($_POST as $key => $value) {
